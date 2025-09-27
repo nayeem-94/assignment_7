@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still...",
+    "customer": "John Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/15/2024"
+  },
+  {
+    "id": 1002,
+    "title": "Payment Gateway Error on Checkout",
+    "description": "User is getting a 404 error after submitting payment details. Happens with both Visa and Mastercard.",
+    "customer": "Sarah Lee",
+    "priority": "CRITICAL",
+    "status": "In-Progress",
+    "createdAt": "1/16/2024"
+  },
+  {
+    "id": 1003,
+    "title": "Broken Link on Contact Page",
+    "description": "The 'Submit Request' button on the contact us page is not clickable, preventing support requests.",
+    "customer": "Acme Corp.",
+    "priority": "LOW",
+    "status": "Closed",
+    "createdAt": "1/16/2024"
+  },
+  {
+    "id": 1004,
+    "title": "Data Sync Failure on Mobile App",
+    "description": "Mobile app data does not sync with the cloud server upon opening. Requires manual refresh.",
+    "customer": "Michael Chen",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/17/2024"
+  },
+  {
+    "id": 1005,
+    "title": "Typo in Email Template",
+    "description": "Automated welcome email contains a grammatical error in the third paragraph. Requires urgent correction.",
+    "customer": "Jane Doe",
+    "priority": "LOW",
+    "status": "In-Progress",
+    "createdAt": "1/17/2024"
+  },
+  {
+    "id": 1006,
+    "title": "Server Downtime - Database Unresponsive",
+    "description": "All API endpoints are failing with a 503 error. Root cause appears to be database connection pool exhaustion.",
+    "customer": "System Alert",
+    "priority": "CRITICAL",
+    "status": "In-Progress",
+    "createdAt": "1/18/2024"
+  },
+  {
+    "id": 1007,
+    "title": "Slow Loading Time on Dashboard",
+    "description": "The main user dashboard takes over 10 seconds to load. Performance regression detected after latest deployment.",
+    "customer": "Alex Johnson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/18/2024"
+  },
+  {
+    "id": 1008,
+    "title": "Feature Request: Export to CSV",
+    "description": "Customer needs the ability to export their historical transaction data into a downloadable CSV file.",
+    "customer": "Alpha Solutions",
+    "priority": "LOW",
+    "status": "Closed",
+    "createdAt": "1/19/2024"
+  },
+  {
+    "id": 1009,
+    "title": "Missing Translation for German Users",
+    "description": "Several key navigation elements still appear in English for users who have selected German as their language.",
+    "customer": "Helena Weber",
+    "priority": "MEDIUM",
+    "status": "In-Progress",
+    "createdAt": "1/19/2024"
+  },
+  {
+    "id": 1010,
+    "title": "Security Vulnerability Found (XSS)",
+    "description": "A cross-site scripting (XSS) vulnerability was reported on the user profile editing page via input sanitization.",
+    "customer": "Security Team",
+    "priority": "CRITICAL",
+    "status": "Open",
+    "createdAt": "1/20/2024"
+  }
+]

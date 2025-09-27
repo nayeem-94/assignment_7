@@ -3,7 +3,7 @@ export default function Navber() {
         <div className="navbar bg-base-100 shadow-sm">
             <div className="flex justify-between container mx-auto  items-center">
 
-                <div className="text-xl  font-bold">CS-Ticket System</div>
+                <div className="text-xl  font-bold">CS — Ticket System</div>
                 <div className=" grid grid-cols-3 md:flex gap-5 justify-center items-center">
                     <p>Home</p>
                     <p>FAQ</p>

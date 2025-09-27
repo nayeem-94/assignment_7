@@ -3,9 +3,9 @@ export default function Footer() {
         <div className="bg-black text-white  ">
             <div className="container mx-auto  ">
 
-                <div className="grid grid-cols-5 gap-8  mb-10 pt-15 border-b border-gray-700  py-10">
-                    <div className="flex flex-col gap-4">
-                        <h1 className="text-2xl font-bold ">CS-Ticket System</h1>
+                <div className="grid grid-cols-2 mx-auto place-items-center md:grid-cols-5 gap-8  mb-10 pt-15 border-b border-gray-700  py-10">
+                    <div className="flex flex-col gap-4 p-6 md:p-0">
+                        <h1 className="text-2xl font-bold ">CS - Ticket System</h1>
                         <p className="text-sm text-[#a1a1aa]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam similique, sapiente quia debitis eius est voluptatum sequi voluptates tempore. Laborum similique fugiat enim facilis doloremque commodi necessitatibus ex consequuntur esse.</p>
                     </div>
 
