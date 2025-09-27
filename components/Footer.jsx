@@ -12,48 +12,48 @@ export default function Footer() {
                     <div className="flex flex-col gap-4">
                         <h1 className="text-2xl font-bold " >Company</h1>
                         <div className="text-sm text-[#a1a1aa] flex flex-col gap-4">
-                        <h3>About Us</h3>
-                        <h3>Our Mission</h3>
-                        <h3>Contact Saled</h3>
+                            <h3>About Us</h3>
+                            <h3>Our Mission</h3>
+                            <h3>Contact Saled</h3>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
                         <h1 className="text-2xl font-bold ">Services</h1>
                         <div className="text-sm text-[#a1a1aa] flex flex-col gap-4">
-                        
-                        <h3>Production and Services</h3>
-                        <h3>Customer Stories</h3>
-                        <h3>Download Apps</h3>
+
+                            <h3>Production and Services</h3>
+                            <h3>Customer Stories</h3>
+                            <h3>Download Apps</h3>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
                         <h1 className="text-2xl font-bold ">Information</h1>
                         <div className="text-sm text-[#a1a1aa] flex flex-col gap-4">
-                        <h3>Privacy and Policy</h3>
-                        <h3>Terms & Conditon</h3>
-                        <h3>Join Us</h3>
+                            <h3>Privacy and Policy</h3>
+                            <h3>Terms & Conditon</h3>
+                            <h3>Join Us</h3>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
                         <h1 className="text-2xl font-bold  ">Social Link</h1>
                         <div className="text-sm text-[#a1a1aa] flex flex-col gap-4">
 
-                        <div className="flex items-center gap-2">
-                            <img src="../src/assets/linkdin.png" alt="" />
-                            @CS-Ticket System
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <img className="bg-white rounded-full w-4 h-4" src="../src/assets/facebook.png" alt="" />
-                            @CS-Ticket System
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <img className="text-black bg-white rounded-full w-4" src="../src/assets/twitter.png" alt="" />
-                            @CS-Ticket System
-                        </div>
+                            <div className="flex items-center gap-2">
+                                <img src="/linkdin.png" alt="" />
+                                @CS-Ticket System
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <img className="bg-white rounded-full w-4 h-4" src="/facebook.png" alt="" />
+                                @CS-Ticket System
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <img className="text-black bg-white rounded-full w-4" src="/linkdin.png" alt="" />
+                                @CS-Ticket System
+                            </div>
 
-                        <div className="flex items-center gap-2">
-                            <img src="../src/assets/help.png" alt="" /> support@cst.com
-                        </div>
+                            <div className="flex items-center gap-2">
+                                <img src="/help.png" alt="" /> support@cst.com
+                            </div>
                         </div>
 
                     </div>
