@@ -1,5 +1,6 @@
 import './App.css'
 import Navber from '../components/navber'
+import Footer from '../components/footer'
 
 function App() {
   
@@ -7,6 +8,8 @@ function App() {
   return (
     <>
       <Navber > </Navber>
+      <Footer></Footer>
+
 
 
 

@@ -14,7 +14,6 @@ export default function Navber() {
 
                     <button className="btn rounded-lg text-white md:text-lg bg-linear-to-r from-[#632ee3] to-[#9f62f2]">+ New Ticket</button>
 
-
                 </div>
             </div>
 
