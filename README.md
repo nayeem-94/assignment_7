@@ -22,5 +22,5 @@ Events are written in camelCase  and passed a function.
 
 
 
-//// live link :  https://nayeem-94.github.io/assignment_7/
+//// live link :  https://adorable-baklava-412a16.netlify.app/
 //// repo link :  https://github.com/nayeem-94/assignment_7

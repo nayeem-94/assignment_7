@@ -8,6 +8,9 @@ function App() {
   return (
     <>
       <Navber > </Navber>
+
+
+      
       <Footer></Footer>
 
 
