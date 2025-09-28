@@ -11,7 +11,7 @@ export default function User({ user }) {
                 </div>
             </div>
             <div className='text-[#627382]'>{user.description}</div>
-            <div className='flex justify-between text-[#627382]'>
+            <div className='flex  flex-col md:flex-row justify-between text-[#627382]'>
                 <div className='flex justify-between gap-3'>
                     <h3>#{user.id}</h3>
                     <p className={user.priority === "HIGH PRIORITY" ? "text-red-500" : user.priority === "LOW" ? "text-green-500" : "text-yellow-600"} >{user.priority}</p>

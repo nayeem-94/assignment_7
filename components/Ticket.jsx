@@ -16,7 +16,7 @@ export default function Ticket({ tickets }) {
                     <h1>customer Tickets</h1>
 
 
-                    <div className='grid grid-cols-2 gap-3 w-5/7'>
+                    <div className='grid grid-cols-1 w-2/3 ml-8 md:ml-0 md:grid-cols-2 gap-3 w-5/7'>
                         {
                             ticketData.map(user => < User key={user.id} user={user}></User>)
                         }
