@@ -3,7 +3,7 @@ import Navber from '../components/navber'
 import Footer from '../components/footer'
 import Main from '../components/main'
 import Ticket from '../components/ticket'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 
 function App() {
 
@@ -14,16 +14,25 @@ function App() {
 
   const tickets = ticketPromise();
 
+
+  const [progress, setProgress] = useState(0);
+  const [resolved, setResolved] = useState(0);
+
+  const handelProgress = () => {
+    const cnt = progress + 1;
+    setProgress(cnt);
+  }
+
   return (
 
     <>
       <Navber > </Navber>
 
 
-      <Main></Main>
-    <Suspense fallback={<div>Loading...</div>}>
-      <Ticket tickets={tickets} ></Ticket>
-    </Suspense>
+      <Main progress={progress} setProgress={setProgress}  resolved={resolved} setResolved={setResolved} ></Main>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Ticket tickets={tickets} progress={progress} setProgress={setProgress}  resolved={resolved} setResolved={setResolved}  ></Ticket>
+      </Suspense>
 
 
       <Footer></Footer>

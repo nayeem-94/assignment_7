@@ -1,7 +1,7 @@
 import { use } from 'react';
 import User from './User';
 
-export default function Ticket({ tickets }) {
+export default function Ticket({ tickets ,progress , setProgress , resolved , setResolved }) {
 
     const ticketData = use(tickets);
     console.log(ticketData);
@@ -10,13 +10,12 @@ export default function Ticket({ tickets }) {
         // <div>ticket : {ticketData[0].customer } </div>
         <div className="bg-[#f5f5f5]">
 
-
             <div className='container mx-auto flex pt-10  '>
                 <div className=''>
                     <h1 className='text-2xl font-medium  '>Customer Tickets</h1>
-                    <div className='grid grid-cols-1  ml-8 md:ml-0 md:grid-cols-2 gap-3'>
+                    <div className='grid grid-cols-1  md:grid-cols-2 gap-3'>
                         {
-                            ticketData.map(user => < User key={user.id} user={user}></User>)
+                            ticketData.map(user => < User key={user.id} user={user} progress={progress} setProgress={setProgress} resolved={resolved} setResolved={setResolved}></User>)
                         }
                     </div>
                 </div>
