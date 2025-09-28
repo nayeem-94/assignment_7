@@ -1,14 +1,10 @@
-export default function User({ user, progress, setProgress, resolved, setResolved }) {
-    console.log(user);
+export default function User({ user, progress, setProgress, resolved, setResolved , handelProgress }) {
+    // console.log(user);
 
-    const handelProgress = () => {
-        alert('clicked');
-        const cnt = progress + 1;
-        setProgress(cnt);
-    }
+   
 
     return (
-        <div onClick={handelProgress} className='bg-white p-5 rounded-lg shadow-md my-5'>
+        <div onClick={() => handelProgress(user)} className='bg-white p-5 rounded-lg shadow-md my-5'>
             <div className='flex justify-between '>
                 <h1 className='font-semibold text-xl'>{user.title}</h1>
                 <div className={`flex justify-center gap-2 items-center rounded-xl text-lg
