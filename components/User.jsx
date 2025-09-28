@@ -1,5 +1,7 @@
 export default function User({ user }) {
     console.log(user);
+
+    
     return (
         <div className='bg-white p-5 rounded-lg shadow-md my-5'>
             <div className='flex justify-between '>
@@ -24,5 +26,6 @@ export default function User({ user }) {
                 </div>
             </div>
         </div>
+        
     )
 }
