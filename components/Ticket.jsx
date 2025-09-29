@@ -10,6 +10,7 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
     // console.log(ticketData);
 
     const [state, setState] = useState([]);
+    const [complet, setComplet] = useState([]);
 
 
     const handelProgress = (user) => {
@@ -18,8 +19,16 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
         const cnt = progress + 1;
         setProgress(cnt);
     }
+    const handleComplete = (problem) => {
+        setProgress(progress - 1);
+        setResolved(resolved + 1);
+        setComplet([...complet, problem]);
+        setState(state.filter(user => user.id !== problem.id));
+    }
 
-    console.log(state);
+    console.log(complet);
+
+    // console.log(state);
 
     return (
         // <div>ticket : {ticketData[0].customer } </div>
@@ -42,14 +51,14 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
                             {
                                 state.length === 0 ? (
                                     <h1 className="text-xl text-gray-400 font-semibold  mt-5 mb-8">
-                                        No Task Selected
+                                        Select a Ticket to add Task Status
                                     </h1>
                                 ) : (
                                     state.map(user => (
 
                                         <div key={user.id} className='bg-white p-5 rounded-lg shadow-md my-5 flex flex-col gap-2'>
                                             <h1 className='text-lg font-semibold '>{user.title}</h1>
-                                            <button className='btn text-lg mt-2  bg-green-600  text-white w-full'>Complete</button>
+                                            <button onClick={() => handleComplete(user)} className='btn text-lg mt-2  bg-green-600  text-white w-full'>Complete</button>
                                         </div>
                                     )))
                             }
@@ -62,6 +71,21 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
                         <h1 className='text-2xl font-medium '>
                             Resolved Task
                         </h1>
+                        <div>
+                            {
+                                complet.length === 0 ? (
+                                    <h1 className="text-xl text-gray-400 font-semibold  mt-5 mb-8">
+                                        No Resolved Task Yet
+                                    </h1>
+                                ) : (
+                                    complet.map(user => (
+                                        <div key={user.id} className='bg-[#e0e7ff] p-5 rounded-lg shadow-md my-5 flex flex-col gap-2'>
+                                            <h1 className='text-lg font-semibold text-[#001931] '>{user.title}</h1>
+                                        </div>
+                                    ))
+                                )
+                            }
+                        </div>
                     </div>
                 </div>
 
