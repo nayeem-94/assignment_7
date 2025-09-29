@@ -1,20 +1,29 @@
 import { use, useState } from 'react';
 import User from './User';
+import { toast } from "react-toastify";
 
 
 
 
 export default function Ticket({ tickets, progress, setProgress, resolved, setResolved }) {
 
-    const ticketData = use(tickets);
-    // console.log(ticketData);
+    const ticketData = use(tickets); //all ticket data
 
-    const [state, setState] = useState([]);
-    const [complet, setComplet] = useState([]);
+    const [state, setState] = useState([]); //all in-progress tasks
+    const [complet, setComplet] = useState([]); //all completed tasks
 
+    let res = ticketData.filter(obj1 =>
+        !complet.some(obj2 => obj2.id === obj1.id)
+    );
+
+    console.log(res);
+
+   
 
     const handelProgress = (user) => {
-        alert(`Id : ${user.id} Task is added to the list `);
+        // alert(`Id : ${user.id} Task is added to the list `);
+        toast.success(`Task Added to task States`);
+
         setState([...state, user]);
         const cnt = progress + 1;
         setProgress(cnt);
@@ -24,11 +33,10 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
         setResolved(resolved + 1);
         setComplet([...complet, problem]);
         setState(state.filter(user => user.id !== problem.id));
+
+
     }
 
-    console.log(complet);
-
-    // console.log(state);
 
     return (
         // <div>ticket : {ticketData[0].customer } </div>
@@ -39,7 +47,7 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
                     <h1 className='text-2xl font-medium  '>Customer Tickets</h1>
                     <div className='grid grid-cols-1  md:grid-cols-2 gap-3'>
                         {
-                            ticketData.map(user => < User key={user.id} user={user} progress={progress} setProgress={setProgress} resolved={resolved} setResolved={setResolved} handelProgress={handelProgress}></User>)
+                            res.map(user => < User key={user.id} user={user} progress={progress} setProgress={setProgress} resolved={resolved} setResolved={setResolved} handelProgress={handelProgress}></User>)
                         }
                     </div>
                 </div>
