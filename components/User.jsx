@@ -4,7 +4,7 @@ export default function User({ user, progress, setProgress, resolved, setResolve
    
 
     return (
-        <div onClick={() => handelProgress(user)} className='bg-white p-5 rounded-lg shadow-md my-5'>
+        <div onClick={() => handelProgress(user)} className='bg-white p-5 rounded-lg shadow-md my-3'>
             <div className='flex justify-between '>
                 <h1 className='font-semibold text-xl'>{user.title}</h1>
                 <div className={`flex justify-center gap-2 items-center rounded-xl text-lg

@@ -16,7 +16,7 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
         !complet.some(obj2 => obj2.id === obj1.id)
     );
 
-    console.log(res);
+    // console.log(res);
 
    
 
@@ -42,19 +42,19 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
         // <div>ticket : {ticketData[0].customer } </div>
         <div className="bg-[#f5f5f5]">
 
-            <div className='container mx-auto flex pt-10  '>
-                <div className='w-5/7 '>
-                    <h1 className='text-2xl font-medium  '>Customer Tickets</h1>
-                    <div className='grid grid-cols-1  md:grid-cols-2 gap-3'>
+            <div className='container mx-auto flex py-10   '>
+                <div className='md:w-5/7 '>
+                    <h1 className='text-2xl ml-3 md:ml-0 font-medium  '>Customer Tickets</h1>
+                    <div className='grid grid-cols-1 ml-3  md:ml-0 w-full md:grid-cols-2 gap-5'>
                         {
                             res.map(user => < User key={user.id} user={user} progress={progress} setProgress={setProgress} resolved={resolved} setResolved={setResolved} handelProgress={handelProgress}></User>)
                         }
                     </div>
                 </div>
-                <div className='ml-10 w-2/7'>
+                <div className='ml-10  md:w-2/7'>
                     <div className='mb-10'>
                         <h1 className='text-2xl font-medium '>Task States</h1>
-                        <div>
+                        <div className='mr-3 md:mr-0'>
                             {/* <p>seclect a task list  </p> */}
                             {
                                 state.length === 0 ? (
@@ -79,7 +79,7 @@ export default function Ticket({ tickets, progress, setProgress, resolved, setRe
                         <h1 className='text-2xl font-medium '>
                             Resolved Task
                         </h1>
-                        <div>
+                        <div  className='mr-3 md:mr-0'>
                             {
                                 complet.length === 0 ? (
                                     <h1 className="text-xl text-gray-400 font-semibold  mt-5 mb-8">
